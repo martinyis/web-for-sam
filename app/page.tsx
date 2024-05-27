@@ -95,7 +95,7 @@ export default function Home() {
           backgroundImage: "url('/CK2A5495.jpg')",
         }}
       >
-        <div className="bg-[#367C2B] bg-opacity-80 h-screen flex  items-center">
+        <div className="bg-[#367C2B] bg-opacity-80 h-screen md:h-auto flex items-center">
           <div className="max-w-[1170px] mx-auto p-4">
             <div className="flex justify-between items-center">
               <div className="w-[30%] bg-white h-[2px] "></div>
