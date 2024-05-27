@@ -62,7 +62,7 @@ const Navbar = (props) => {
         <Socials />
       </nav>
       <nav className="md:block gap-[66px] hidden h-[80px]">
-        <div className="flex items-center justify-between items-center mt-10">
+        <div className="flex items-center justify-between items-center mt-2">
           <div>
             <Image
               src="/IMG_9969.jpg"
