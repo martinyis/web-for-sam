@@ -7,11 +7,11 @@ function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
 
-  const handleNameChange = (event) => {
+  const handleNameChange = (event: any) => {
     setName(event.target.value);
   };
 
-  const handleEmailChange = (event) => {
+  const handleEmailChange = (event: any) => {
     setEmail(event.target.value);
   };
 
