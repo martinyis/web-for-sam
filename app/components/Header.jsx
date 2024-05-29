@@ -26,9 +26,9 @@ const Navbar = (props) => {
       <nav className="max-w-[1400px] mx-auto flex md:hidden h-[120px] justify-between gap-[10px] items-center text-[#0E6400] text-[20px]">
         <div>
           <Image
-            src="/IMG_9969.jpg"
+            src="/FILE_7068-1.png"
             alt="Sam Image"
-            width={90}
+            width={160}
             height={70}
             className="rounded-lg mx-auto"
           />
@@ -51,10 +51,6 @@ const Navbar = (props) => {
             <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
           </li>
           <li className="relative group">
-            <Link href="/endorsements">ENDORSEMENTS</Link>
-            <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-          </li>
-          <li className="relative group">
             <Link href="/">DONATE</Link>
             <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
           </li>
@@ -65,9 +61,9 @@ const Navbar = (props) => {
         <div className="flex items-center justify-between items-center mt-2">
           <div>
             <Image
-              src="/IMG_9969.jpg"
+              src="/FILE_7068-1.png"
               alt="Sam Image"
-              width={90}
+              width={100}
               height={70}
               className="rounded-lg mx-auto"
             />
@@ -109,12 +105,6 @@ const Navbar = (props) => {
             <li className="relative group">
               <Link href="/contact" onClick={handleLinkClick}>
                 CONTACT
-              </Link>
-              <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
-            </li>
-            <li className="relative group">
-              <Link href="/endorsements" onClick={handleLinkClick}>
-                ENDORSEMENTS
               </Link>
               <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
             </li>

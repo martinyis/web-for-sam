@@ -38,7 +38,7 @@ function MeetSamCards() {
           <div className="flex justify-between gap-[40px] items-center md:flex-col mt-[30px]">
             <Fade triggerOnce direction="left">
               <Image
-                src="/IMG_6240.JPG"
+                src="/CK2A5504.jpg"
                 alt="Sam Image 1"
                 width={432}
                 height={324}
@@ -65,10 +65,10 @@ function MeetSamCards() {
                 understand how fiscal policy and markets interact. Low taxes are
                 the result of low spending. Families need to manage budgets
                 responsibly, and so should the state of New Hampshire. When the
-                pro- Palestine and anti-Israel protests broke out at UNH, I
-                successfully organized a peaceful counterprotest. We waved
-                American flags to show our peers that it is okay to be a proud
-                American. I am committed to preserving free speech.
+                pro-Palestine protesters at UNH started chanting “America go to
+                Hell”, I successfully organized a peaceful counterprotest. We
+                waved American flags to show our peers that it is okay to be a
+                proud American. I am committed to preserving free speech.
               </p>
             </Fade>
             <Fade triggerOnce direction="right">
@@ -79,37 +79,6 @@ function MeetSamCards() {
                 height={324}
                 className="shadow-xl shadow-black rounded-lg"
               />
-            </Fade>
-          </div>
-          <div className="flex justify-between gap-[40px] items-center md:flex-col mt-[30px]">
-            <Fade triggerOnce direction="left">
-              <Image
-                src="/CK2A5410.jpg"
-                alt="Sam Image 1"
-                width={432}
-                className="shadow-xl shadow-black rounded-lg"
-                height={324}
-              />
-            </Fade>
-            <Fade triggerOnce direction="right">
-              <p className="text-white text-[18px] max-w-[700px] xl:max-w-[500px] lg:text-[16px]">
-                I am running for State Representative because my future is at
-                stake. The bills that I vote on will impact me for decades. I
-                stand for values like family, faith, and freedom, all of which
-                are under attack. Rochester has a choice to make: a choice
-                between personal liberty and government overreach; a choice
-                between prosperous growth and gradual decline; a choice between
-                a system of merit and free handouts. As a 20-year-old, I have
-                skin in the game because my future is literally on the ballot.
-                My generation is at a crossroads with no clear path forward.
-                Young people are struggling to purchase homes. We are hesitant
-                to marry, let alone having children. We will be burdened by
-                interest payments on our soaring national debt. I want to raise
-                a family in the same great state of New Hampshire that I grew up
-                in. I am running for state rep to defend our state motto “Live
-                Free or Die” because legislatures should defend, not limit,
-                personal freedom.
-              </p>
             </Fade>
           </div>
         </div>

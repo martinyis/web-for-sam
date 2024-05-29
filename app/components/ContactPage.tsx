@@ -24,11 +24,20 @@ function Contact() {
   };
 
   return (
-    <main>
-      <div className="bg-fixed min-h-screen">
-        <div className="bg-[#367C2B] bg-opacity-80 pd:pb-[1000px] mt-[120px] h-screen md:h-auto">
-          <div className="max-w-[1400px] mx-auto p-4 flex md:flex-col md:gap-[80px] justify-between items-center pt-[120px] xl:pt-[100px]">
-            <div>
+    <main className="h-full">
+      <div
+        className=""
+        style={{
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          backgroundImage: "url('/IMG_6370.jpg')",
+        }}
+      >
+        <div className="bg-[#367C2B] bg-opacity-80 pd:pb-[1000px] mt-[120px] h-full">
+          <div className="max-w-[1400px] mx-auto p-4 flex md:flex-col md:gap-[80px] justify-between items-center pt-[120px] xl:pt-[100px] pb-[100px]">
+            <div className="">
               <Fade triggerOnce direction="left">
                 <p className="text-white text-[60px] font-bold max-w-[640px] lg:text-[42px]">
                   Have a question or need more information? Contact me directly!
@@ -61,7 +70,7 @@ function Contact() {
                       />
                     </div>
                     <p className="text-white text-[24px] lg:text-[18px]">
-                      +1 123 456 7890
+                      +1 (603) 948-6240
                     </p>
                   </div>
                   <div className="flex items-center gap-[32px]">

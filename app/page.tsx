@@ -1,15 +1,35 @@
 "use client";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 export default function Home() {
+  const carouselRef = useRef<any>(null); // Adjusted type to any
+
+  useEffect(() => {
+    const carouselImages =
+      carouselRef.current?.querySelectorAll(".carousel-image");
+    let currentIndex = 0;
+
+    const intervalId = setInterval(() => {
+      if (!carouselImages) return; // Check if carouselImages is null
+
+      carouselImages[currentIndex].style.opacity = "0";
+
+      currentIndex = (currentIndex + 1) % carouselImages.length;
+
+      carouselImages[currentIndex].style.opacity = "1";
+    }, 2500);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <main>
       <div className="md:max-w-full md:flex-col md:px-0 md:mt-[180px] sm:mt-[170px] mx-auto flex mt-[120px] justify-between items-center gap-[20px] md:gap-[40px]">
         <div className="flex flex-col items-center w-[80%]">
           <Fade>
             <Image
-              src="/IMG_9969.jpg"
+              src="/FILE_7068-1.png"
               alt="Sam Image"
               width={288}
               height={262}
@@ -45,11 +65,18 @@ export default function Home() {
             </div>
           </Fade>
         </div>
-        <div className="carousel">
+        <div className="carousel" ref={carouselRef}>
           <div className="relative w-full h-full">
             <Image
-              src="/CK2A5530.jpg"
-              alt="Sam Image 1"
+              src="/IMG_6312.JPG"
+              alt="Sam Image"
+              layout="fill"
+              className="carousel-image"
+              objectFit="cover"
+            />
+            <Image
+              src="/IMG_4118.jpg"
+              alt="Sam Image 3"
               layout="fill"
               className="carousel-image"
               objectFit="cover"
@@ -68,25 +95,11 @@ export default function Home() {
               className="carousel-image"
               objectFit="cover"
             />
-            <Image
-              src="/IMG_4118.jpg"
-              alt="Sam Image 3"
-              layout="fill"
-              className="carousel-image"
-              objectFit="cover"
-            />
-            <Image
-              src="/IMG_6312.JPG"
-              alt="Sam Image 3"
-              layout="fill"
-              className="carousel-image"
-              objectFit="cover"
-            />
           </div>
         </div>
       </div>
       <div
-        className="bg-fixed min-h-screen"
+        className="min-h-screen"
         style={{
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -95,7 +108,7 @@ export default function Home() {
           backgroundImage: "url('/CK2A5495.jpg')",
         }}
       >
-        <div className="bg-[#367C2B] bg-opacity-80 h-screen md:h-auto flex items-center">
+        <div className="bg-[#367C2B] bg-opacity-80 h-screen flex items-center">
           <div className="max-w-[1170px] mx-auto p-4">
             <div className="flex justify-between items-center">
               <div className="w-[30%] bg-white h-[2px] "></div>
@@ -109,25 +122,22 @@ export default function Home() {
                 <div className="max-w-[430px] text-[18px] text-white lg:text-[14px]">
                   <p>
                     I am running for State Representative because my future is
-                    at stake. The bills that I vote on will impact me for
-                    decades. I stand for values like family, faith, and freedom,
-                    all of which are under attack.
+                    at stake. When I look around, I am worried about where we
+                    are headed. I stand for values like family, faith, and
+                    freedom, all of which are under attack.
                   </p>
                   <p className="mt-[50px]">
-                    "Rochester has a choice to make: a choice between personal
-                    liberty and government overreach, between prosperous growth
-                    and gradual decline, and between a system of merit and free
-                    handouts. As a young person, I have skin in the game because
-                    my future is on the ballot. I want to raise a family in the
-                    same great state of New Hampshire that I grew up in. I am
-                    running for State Representative to defend sanity because it
-                    is hanging on by a thread.
+                    Rochester has a choice to make. As a young person, I have
+                    skin in the game because my future is on the ballot. I want
+                    to raise a family in the same great state of New Hampshire
+                    that I grew up in. I hope to earn your vote so that we can
+                    build a better future together.
                   </p>
                 </div>
               </Slide>
               <Slide direction="right" triggerOnce>
                 <Image
-                  src={"/sam-image.png"}
+                  src={"/CK2A5530.jpg"}
                   alt="Sam Image"
                   width={500}
                   height={500}
@@ -136,24 +146,6 @@ export default function Home() {
               </Slide>
             </div>
           </div>
-          {/* <div className="max-w-[1170px] mx-auto p-4">
-            <div className="flex justify-between items-center mt-[20px]">
-              <div className="w-[25%] bg-white h-[2px] "></div>
-              <p className="text-center font-bold text-white text-[52px] md:text-[32px] sm:text-[24px]">
-                Why Am I running?
-              </p>
-              <div className="w-[25%] bg-white h-[2px]"></div>
-            </div>
-            <p className="max-w-[600px] text-[18px] text-white lg:text-[14px] mx-auto mt-[40px]">
-              I am a proud 6th-generation citizen of Rochester. Having grown up
-              on our farm that has been in the family since 1913, I have
-              developed an appreciation for family, history, and tradition. Over
-              the past few years, I have revitalized our farm. I successfully
-              negotiated with the USDA to secure conservation funding which has
-              allowed me to bring this property back to its prime. You can find
-              me baling hay, raising pigs, and sawing lumber over the summer.
-            </p>
-          </div> */}
         </div>
       </div>
     </main>

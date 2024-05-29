@@ -8,7 +8,7 @@ function Footer() {
       <div className="mx-auto flex flex-col justify-center">
         <div className="px-[10px] pt-[70px] mx-auto">
           <Image
-            src="/IMG_9969.jpg"
+            src="/FILE_7068-1.png"
             alt="Sam Image"
             width={130}
             height={80}
@@ -45,7 +45,7 @@ function Footer() {
         <div className="mt-[26px] w-full h-[1px] bg-[#236F00]"></div>
         <div className="px-[10px] mt-[28px] mx-auto mb-[80px] text-center">
           <p>
-            “Paid for by Friends of Sam Farrington. Elliot Boutin, Treasurer. 35
+            Paid for by Friends of Sam Farrington. Elliot Boutin, Treasurer. 35
             Chesley Hill Rd, Rochester, NH 03839.
           </p>
         </div>
