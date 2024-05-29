@@ -12,13 +12,7 @@ export default function Acordionui() {
     },
     {
       label: "Defend Liberty",
-      text: "“Live Free or Die” is not just a slogan, it is our way of life. My political philosophy is\
-      strongly influenced by Thomas Jefferson who said, “The government is best which\
-      governs least”. I am driven not by partisanship but by the US and NH Constitutions. I\
-      will always fight to protect Constitutional Carry, religious freedom, medical\
-      freedom, and due process of law. I look forward to passing Defend the Guard into\
-      law because Congress should be required to declare war if the NH National Guard is\
-      being sent into overseas combat zones.",
+      text: "“Live Free or Die” is not just a slogan, it is our way of life. My political philosophy is strongly influenced by Thomas Jefferson who said, “The government is best which governs least”. I am driven not by partisanship but by the US and NH Constitutions. I will always fight to protect Constitutional Carry, religious freedom, medical freedom, and due process of law. I look forward to passing Defend the Guard into law because Congress should be required to declare war if the NH National Guard is being sent into overseas combat zones.",
     },
     {
       label: "Increase Educational Opportunities",
@@ -30,24 +24,25 @@ export default function Acordionui() {
     },
     {
       label: "Fight for Rochester",
-      text: "As a State Rep in Concord, I will remain accountable to the citizens of Rochester. I\
-      will hold monthly town hall meetings to answer questions on local issues. I look\
-      forward to developing more relationships with my fellow citizens.",
+      text: "As a State Rep in Concord, I will remain accountable to the citizens of Rochester. I will hold monthly town hall meetings to answer questions on local issues. I look forward to developing more relationships with my fellow citizens.",
     },
   ];
 
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 768);
+      };
 
-    window.addEventListener("resize", handleResize);
+      handleResize(); // Set initial state
+      window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   return (
