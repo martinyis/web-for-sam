@@ -51,7 +51,9 @@ const Navbar = (props) => {
             <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
           </li>
           <li className="relative group">
-            <Link href="/">DONATE</Link>
+            <Link href="https://secure.winred.com/friends-of-sam-farrington/donate-today">
+              DONATE
+            </Link>
             <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
           </li>
         </ul>
@@ -109,7 +111,10 @@ const Navbar = (props) => {
               <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
             </li>
             <li className="relative group">
-              <Link href="/" onClick={handleLinkClick}>
+              <Link
+                href="https://secure.winred.com/friends-of-sam-farrington/donate-today"
+                onClick={handleLinkClick}
+              >
                 DONATE
               </Link>
               <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-[#FFDE00] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>

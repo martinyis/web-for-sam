@@ -56,7 +56,8 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  window.location.href = "/";
+                  window.location.href =
+                    "https://secure.winred.com/friends-of-sam-farrington/donate-today";
                 }}
                 className="font-bold w-[185px] h-[52px] lg:w-[150px] lg:h-[45px] sm:w-[130px] sm:h-[45px] text-[#367C2B] flex items-center justify-center rounded-[8px] bg-[#FFDE00] transform transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg active:translate-y-0.5 active:shadow-sm"
               >
